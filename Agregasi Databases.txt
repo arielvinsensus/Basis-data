@@ -1,0 +1,21 @@
+Nama:Ariel Vinsensus
+NIM:31101810925
+
+1.Untuk Menampilkan Pegawai yang gajinya bukan 2000000 dan 1250000
+	select * from pegawai where gaji <> 2000000 and gaji <>1250000;
+2.Untuk Menampilkan isi data yang di tunjangannya kosong/tidak di isi
+	select * from pegawai where tunjangan is NULL;
+3.Untuk Menampilkan isi data yang di tunjangannya kosong/tidak di isi
+	select * from pegawai where tunjangan is not NULL;
+4.Perintah yang di gunakan untuk menghitung jumlah baris suatu kolom pada tabel
+	select count(idpegawai)from pegawai;
+5.Perintah yang di gunakan untuk menghitung jumlah nilai suatu kolom pada tabel 
+	select sum(gaji)as jumlah from pegawai;
+6.Perintah yang di gunakan untuk menghitung jumlah nilai suatu kolom pada tabel 
+	select avg(gaji)as jumlah from pegawai;
+7.Perintah yang di gunakan untuk menghitung jumlah nilai suatu kolom pada tabel 
+	select min(gaji)as jumlah from pegawai;
+8.Perintah yang di gunakan untuk menghitung jumlah nilai suatu kolom pada tabel 
+	select max(gaji)as jumlah from pegawai;
+
+Terima Kasih Sudah Menonton Vidio Saya Semoga Bermanfaat.

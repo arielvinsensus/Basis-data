@@ -1,0 +1,19 @@
+Nama:Ariel Vinsensus
+NIM:31101810925
+
+1.Untuk Menampilkan Hewan yang di miliki setiap owner
+	select owner, count(spesies) from pet group by owner;
+2.Untuk Menampilkan hewan berdasarkan spesies
+	select (spesies) from pet;
+3.Untuk Menampilkan hewan berdasarkan jenis kelamin
+	select sex, count(sex) from pet group by sex;
+4.Menampilkan hewan berdasarkan spesies dan jenis kelamin
+	select spesies,sex, count(spesies) as jumlah from pet group by spesies;
+5.Menampilkan berdasarkan spesies (cat and dog) dan jenis kelamin:
+	select spesies,sex, count(spesies) as jumlah from pet where(spesies="cat" or spesies="dog") group 	by sex,spesies;
+6.Tampilan jumlah hewan berdasarkan jenis kelamin yang di ketahui saja
+	select sex, spesies from pet where sex is not null group by sex, spesies;
+
+Karena Tidak Bisa species coba kamu ketik spesies
+
+Terima Kasih Sudah Menonton Vidio Saya Semoga Bermanfaat kalau ada kekurangan mohon maklum masih newbie :V.

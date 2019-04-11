@@ -1,0 +1,25 @@
+Hallo Teman-Teman Selamat Datang Pemograman Databases Join 
+Nama:Ariel Vinsensus
+NIM:311810925
+Bagaimana Cara Join Ke Sewa Mobil
+
+-Untuk Memanggil Database Sewa Mobil: use sewamobil;
+-Untuk Memanggil From Mobil: select * from mobil;
+-Untuk Memangiil From Sewa: select * from sewa;
+-Untuk Memanggil From Pelanggan: select * from pelanggan;
+-Untuk Membuat Kode Sewa Mobil: 
+select mobil.kode, mobil.jenis, mobil.merk, sewa.nofaktursewa, sewa.tglsewa, sewa.lamasewa
+from mobil left join sewa on mobil.kode=sewa.kodemobil order by mobil.kode asc;
+-Untuk Membuat Nofaktur Sewa:
+select
+sewa.nofaktursewa,
+pelanggan.nama,
+sewa.tglsewa,
+mobil.jenis,
+mobil.merk,
+sewa.lamasewa,
+sewa.uangmuka
+from sewa left join mobil on mobil.kode=sewa.kodemobil
+left join pelanggan on pelanggan.kode=sewa.kodepelanggan;
+
+Sekian Terima Kasih.
